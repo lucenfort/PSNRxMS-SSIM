@@ -15,7 +15,7 @@ df.head(10)  # mostra as 10 primeiras linhas do Dataframe na janela interativa
 ###############################################################################
 # TRATAMENTO DE DADOS:
 ###############################################################################
-# Aqui eu substituir os valores inf e -inf por nan e removir as linhas com
+# Aqui eu vou substituir os valores inf e -inf por nan e remover as linhas com
 # valores nan.
 data = df.replace([np.inf, -np.inf], np.nan).dropna(axis=0)
 data.head(10)  # mostra as 10 primeiras linhas do Dataframe na janela interativa
@@ -65,7 +65,7 @@ plt.show()
 ###############################################################################
 # ENCONTRAR MELHOR COMBINAÇÃO
 ###############################################################################
-# Aqui vamos calcular qual a melhor combinação de familia wavelet e de level de
+# Aqui vou calcular qual a melhor combinação de familia wavelet e de level de
 # decomposição para compressão, por meio de parametrização das métricas usando
 # normalização min-max.
 # A melhor combinação indicarar os paramêtros da melhor compressão.
